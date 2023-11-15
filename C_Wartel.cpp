@@ -23,5 +23,4 @@ int main(){
             if(j==n-1&&ketemu==string::npos) cout<<"NIHIL"<<endl;
         }
     }
-    
 }
