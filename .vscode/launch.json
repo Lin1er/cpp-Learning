@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/mulin/OneDrive/Dokumen/CPP Latihan",
-      "program": "c:/Users/mulin/OneDrive/Dokumen/CPP Latihan/build/Debug/outDebug",
+      "cwd": "c:/Users/Dannur/Documents/cpp-Learning",
+      "program": "c:/Users/Dannur/Documents/cpp-Learning/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
