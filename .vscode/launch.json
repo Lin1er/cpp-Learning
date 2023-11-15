@@ -8,8 +8,13 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
+<<<<<<< Updated upstream
       "cwd": "c:/Users/Dannur/Documents/cpp-Learning",
       "program": "c:/Users/Dannur/Documents/cpp-Learning/build/Debug/outDebug",
+=======
+      "cwd": "c:/Users/mulin/OneDrive/Dokumen/cpp-Learning",
+      "program": "c:/Users/mulin/OneDrive/Dokumen/cpp-Learning/build/Debug/outDebug",
+>>>>>>> Stashed changes
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
