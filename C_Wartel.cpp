@@ -1,26 +1,42 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <map>
+#include <string>
+
 using namespace std;
 
-struct Contact{
-    string nama;
-    int nomor;
-}; 
+int main() {
+    int N, Q;
+    cin >> N >> Q;
 
-int main(){
-    int n, cari;
-    cin>>n>>cari;
-    string caris[cari];
-    Contact kontak[n];
-    for(int i = 0; i<n; i++) cin>>kontak[i].nama>>kontak[i].nomor;
-    for (int i = 0; i < cari; i++) cin>>caris[i];
-    for(int i=0; i<cari; i++){
-        for (int j = 0; j < n; j++){
-            size_t ketemu = kontak[j].nama.find(caris[i]);
-            if(ketemu!=string::npos){ 
-                cout<<kontak[j].nomor<<endl;
-                break;
-            }
-            if(j==n-1&&ketemu==string::npos) cout<<"NIHIL"<<endl;
+    // Membuat map untuk menyimpan data nama dan nomor telepon
+    map<string, string> bukuTelepon;
+
+    // Membaca dan menyimpan data nama dan nomor telepon ke dalam map
+    for (int i = 0; i < N; ++i) {
+        string nama, nomorTelepon;
+        cin >> nama >> nomorTelepon;
+        bukuTelepon[nama] = nomorTelepon;
+    }
+
+    // Mencari nomor telepon untuk setiap pertanyaan
+    for (int i = 0; i < Q; ++i) {
+        string nama;
+        cin >> nama;
+
+        // Menggunakan iterator untuk mencari nama dalam map
+        auto it = bukuTelepon.find(nama);
+
+        // Jika nama ditemukan, cetak nomor telepon, jika tidak, cetak NIHIL
+        if (it != bukuTelepon.end()) {
+            cout << it->second << endl;
+        } else {
+            cout << "NIHIL" << endl;
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+
+    return 0;
+}
+>>>>>>> Stashed changes
